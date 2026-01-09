@@ -25,12 +25,19 @@
 * docker default bridge network does'nt communicates to each other.
 * so user your bridge network 
 * create your own network interface
-docker network ls -> show all networks
-docker network --help -> show all network commands
-docker network create <network_name>
-docker network disconnect <type_of_network> <container_name> (type_of_network = bridge,host,none)
+* docker network ls -> show all networks
+* docker network --help -> show all network commands
+* docker network create <network_name>
+* docker network disconnect <type_of_network> <container_name> (type_of_network = bridge,host,none)
 * disconnect with default bridge network to all containers and then connect the your own(roboshop) network for all containers.
-docker network connect <type_of_network> <container_name> (docker network connect roboshop mongodb)
+* docker network connect <type_of_network> <container_name> (docker network connect roboshop mongodb)
 # redis:
 * directly run redis image without docker file
+# user:
+* user also running the same node js application like catalogue then we use catalogue code but we need to chagne the environment variables as per documentation.
+* use same roboshop network for user as well
+* docker build -t user:v1 .
+* docker run -d --network roboshop --name user user:v1
+* docker exec -it user bash
+* curl http://localhost:8080/health -> connected mongodb and app were true
 
