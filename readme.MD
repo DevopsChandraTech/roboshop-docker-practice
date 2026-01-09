@@ -33,6 +33,7 @@
 * docker network connect <type_of_network> <container_name> (docker network connect roboshop mongodb)
 # redis:
 * directly run redis image without docker file
+* docker run -d --name redis --network roboshop redis:7
 # user:
 * user also running the same node js application like catalogue then we use catalogue code but we need to chagne the environment variables as per documentation.
 * use same roboshop network for user as well
