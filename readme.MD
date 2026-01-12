@@ -70,6 +70,16 @@
 * docker exec -it payment bash
 * curl http://localhost:8080/health
 # frontend:
+* using nginx web server for frontend nginx:1.24
+* copy entier code and create folder called static then paste it
+* create nginx.conf file and copy data from nginx.conf web
+* in sql commands inside:
+    - mysql -u root -pRoboShop@1
+    - show databases; -> showing all data bases
+    - use cities; -> select into that database
+    - show tables; -> show inside tables into that database
+    - select * from cities; -> show content of the table
+
 
 
 
