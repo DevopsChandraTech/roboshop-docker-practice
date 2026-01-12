@@ -63,6 +63,14 @@
 * we directly run rabbitmq, why rabbitmq is no configuration and no dependencies
 * we are taken rabbitmq versin is 3 rabbitmq:3
 * docker run -d --name rabbitmq --network roboshop rabbitmq:3
+# payment:
+* in payment we are using python:3.9 version
+* docker build -t payment:v1
+* docker run -d --name payment --network roboshop payment:v1
+* docker exec -it payment bash
+* curl http://localhost:8080/health
+# frontend:
+
 
 
 
