@@ -4,7 +4,7 @@ use cities;
 
 DROP TABLE IF EXISTS `cities`;
 CREATE TABLE `cities` (
-    `uuid` int(11) NOT NULL AUTO INCREMENT,
+    `uuid` int(11) NOT NULL AUTO_INCREMENT,
     `country_code` varchar(2) DEFAULT NULL,
     `city` varchar(100) DEFAULT NULL,
     `name` varchar(100) DEFAULT NULL,

@@ -40,5 +40,14 @@
 * docker build -t user:v1 .
 * docker run -d --network roboshop --name user user:v1
 * docker exec -it user bash
-* curl http://localhost:8080/health -> connected mongodb and app were true
+* curl http://localhost:8080/health -> connected mongodb and app were true.
+# mysql:
+* create dockerfile for mysql
+* docker build -t mysql:v1 .
+* docker run -d --name mysql --network roboshop mysql:v1
+* docker exec -it mysql bash
+* inside the mysql for checking databases
+* mysql -u root -pRoboshop@1 -> for database login
+* show databases -> showing databases
+
 
