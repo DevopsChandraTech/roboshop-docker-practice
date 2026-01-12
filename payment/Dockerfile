@@ -6,12 +6,12 @@ COPY rabbitmq.py
 COPY requirements.txt
 RUN pip3 install -r requirements.txt
 ENV CART_HOST="cart" \
-ENV CART_PORT="8080" \
-ENV USER_HOST="user" \
-ENV USER_PORT="8080" \
-ENV AMQP_HOST="rabbitmq" \
-ENV AMQP_USER="roboshop" \
-ENV AMQP_PASS="roboshop123"
+    CART_PORT="8080" \
+    USER_HOST="user" \
+    USER_PORT="8080" \
+    AMQP_HOST="rabbitmq" \
+    AMQP_USER="roboshop" \
+    AMQP_PASS="roboshop123"
 CMD ["uwsgi" , "--ini" , "payment.ini"]
 CMD ["kill" , "-9" , "$MAINPID"]
 
