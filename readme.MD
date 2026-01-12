@@ -51,5 +51,16 @@
 * mysql -u root -pRoboshop@1 -> for database login
 * show databases -> showing databases
 * docker logs <contaner_name> -> for showing logs of the container
+# shipping:
+* create dockerfile for shipping
+* we are using shipping 3.9.11
+* docker build -t shipping:v1 .
+* docker run -d --name shipping --netowork roboshop shipping:v1
+* docker exec -it shipping bash
+* curl http://localhost:8080
+* in Dockerfile we copy entier folder of src like COPY src/ ./src
+# rabbitmq:
+* we directly run rabbitmq, why rabbitmq is no configuration and no dependencies
+* we are taken rabbitmq versin is 3 rabbitmq:3
 
 
