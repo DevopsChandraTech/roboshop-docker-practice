@@ -62,5 +62,7 @@
 # rabbitmq:
 * we directly run rabbitmq, why rabbitmq is no configuration and no dependencies
 * we are taken rabbitmq versin is 3 rabbitmq:3
+* docker run -d --name rabbitmq --network roboshop rabbitmq:3
+
 
 
