@@ -3,6 +3,7 @@
 * first we need to create database mongodb
 * search for mongodb office docker image then use dockerfile we are using mongodb:version 7.0 so will take that version from docker repository
 * Map a volume to /docker-entrypoint-initdb.d containing .sh or .js files, they will be executed in alphabetical order.
+* docker logs <contaner_name> -> for showing logs of the container
 * docker build -t mongodb:v1 .
 * docker run -d --name mongodb mongodb:v1 
 * docker ps
@@ -49,5 +50,6 @@
 * inside the mysql for checking databases
 * mysql -u root -pRoboshop@1 -> for database login
 * show databases -> showing databases
+* docker logs <contaner_name> -> for showing logs of the container
 
 
